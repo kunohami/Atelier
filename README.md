@@ -7,7 +7,7 @@
 
 > Work in progress
 
-A portfolio and playground built with Angular — a space to showcase digital illustrations and 3D art while learning the framework by doing.
+A portfolio and playground built with Angular — a space to showcase digital illustrations and 3D art while learning the framework.
 
 ## Getting started
 
