@@ -1,11 +1,17 @@
 main {
-  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-  h1 {
-    color: #f4a7c3;
+  img {
+    width: 300px;
   }
 
   p {
-    color: #a0c4f4;
+    font-family: cursive;
+    color: #f4a7c3;
+    margin-top: 1rem;
   }
 }
