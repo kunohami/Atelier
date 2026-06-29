@@ -1,5 +1,10 @@
-<main>
-  <img src="https://res.cloudinary.com/dm3gfwc5o/image/upload/v1781807922/Animation4_ox8fsb.webp" alt="Atelier" />
-  <p>under construction</p>
-  <router-outlet />
-</main>
+<!-- app.html is the root shell of the entire site.
+     It stays on screen no matter which page you navigate to. -->
+
+<!-- The nav component we built — always visible at the top -->
+<app-nav />
+
+<!-- router-outlet is a placeholder that Angular replaces with the
+     current page's component based on the URL.
+     Navigate to /work → Angular puts the Work component here. -->
+<router-outlet />
