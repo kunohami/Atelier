@@ -1,10 +1,13 @@
 import { TestBed } from '@angular/core/testing';
+import { provideRouter } from '@angular/router';
 import { App } from './app';
 
 describe('App', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [App],
+      // provideRouter([]) makes RouterLink and RouterOutlet work in tests
+      providers: [provideRouter([])],
     }).compileComponents();
   });
 
@@ -14,10 +17,10 @@ describe('App', () => {
     expect(app).toBeTruthy();
   });
 
-  it('should render the under construction message', async () => {
+  it('should render the nav', async () => {
     const fixture = TestBed.createComponent(App);
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('p')?.textContent).toContain('under construction');
+    expect(compiled.querySelector('nav')).toBeTruthy();
   });
 });
